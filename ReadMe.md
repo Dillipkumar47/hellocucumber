@@ -12,3 +12,12 @@ mvn archetype:generate                      \
    "-DinteractiveMode=false"
 
 ```
+
+## Execute cucumber tests with maven command
+```text
+- mvn test -Dcucumber.filter.tags="@final" #filter tests with tag
+- mvn test -Dcucumber.options="--plugin html:target/cucumber-html-report.html"
+
+
+```
+ 
